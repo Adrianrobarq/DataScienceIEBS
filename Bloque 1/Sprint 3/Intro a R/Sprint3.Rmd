@@ -1,7 +1,8 @@
 ---
 title: "Actividad Semanal de la clase 3"
-author: Adrián Robles
-output: html_document
+author: "Adrián Robles"
+output:
+  html_document: default
 ---
 
 ```{r setup, include=FALSE}
