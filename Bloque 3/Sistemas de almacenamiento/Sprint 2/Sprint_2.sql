@@ -26,14 +26,14 @@
 -- Creamos la tabla Publicitaria
 CREATE TABLE IF NOT EXISTS "Marketing"."Publicitaria" (
     Fecha DATE,
-    Visitas INTEGER, 
-    Unidades_vendidas INTEGER, 
-    Importe NUMERIC, 
-    Inversion_total NUMERIC, 
-    Inversion_tv NUMERIC, 
-    Inversion_radio NUMERIC, 
-    Inversion_social NUMERIC)
-TABLESPACE "pg_default";
+    Visitas BIGINT, 
+    Unidades_vendidas BIGINT, 
+    Importe NUMERIC(15, 2), 
+    Inversion_total NUMERIC(15, 2), 
+    Inversion_tv NUMERIC(15, 2), 
+    Inversion_radio NUMERIC(15, 2), 
+    Inversion_social NUMERIC(15, 2))
+TABLESPACE "pg_default";)
 
 ALTER TABLE IF EXISTS "Marketing"."Publicitaria" 
     OWNER TO postgres;
@@ -41,21 +41,28 @@ ALTER TABLE IF EXISTS "Marketing"."Publicitaria"
 COMMENT ON TABLE "Marketing"."Publicitaria"
     IS 'Tabla de datos que une información de las otras tablas.'
 
--- Buscamos datos solicitados
-INSERT INTO "Marketing"."Publicitaria" (Fecha, Visitas, Unidades_vendidas, Importe, Inversion_tv, Inversion_radio, Inversion_social)
-SELECT 
+-- Generamos tabla con los datos solicitados
+INSERT INTO "Marketing"."Publicitaria" (Fecha, Visitas, Unidades_vendidas, Importe, Inversion_tv, Inversion_radio, inversion_social)
+SELECT
     DATE("KPI"."Fecha_hora_minuto") AS Fecha,
     SUM("KPI"."Visitas") AS Visitas,
-    SUM("KPI"."Unidades_vendidas") AS Unidades_vendidas,
+    SUM("KPI"."Unidades vendidas") AS Unidades_vendidas,
     SUM("KPI"."Importe") AS Importe,
-    SUM("TV"."Inversion") AS Inversion_tv, 
-    SUM("Radio"."Inversion") AS Inversion_radio, 
+    SUM("TV"."Inversion") AS Inversion_tv,
+    SUM("Radio"."Inversion") AS Inversion_radio,
     SUM("Social"."Inversion") AS Inversion_social
 FROM
     "Marketing"."KPI"
-    LEFT JOIN "Marketing"."TV" ON DATE("KPI"."Fecha_hora_minuto") = DATE("TV"."Fecha_hora_minuto")
-    LEFT JOIN "Marketing"."Radio" ON DATE("KPI"."Fecha_hora_minuto") = DATE("Radio"."Fecha_hora_minuto")
-    LEFT JOIN "Marketing"."Social" ON DATE("KPI"."Fecha_hora_minuto") = DATE("Social"."Fecha")
+    FULL JOIN "Marketing"."TV" ON DATE("KPI"."Fecha_hora_minuto") = DATE("TV"."Fecha_hora_minuto")
+    FULL JOIN "Marketing"."Radio" ON DATE("KPI"."Fecha_hora_minuto") = DATE("Radio"."Fecha_hora_minuto")
+    FULL JOIN "Marketing"."Social" ON DATE("KPI"."Fecha_hora_minuto") = DATE("Social"."Fecha")
 GROUP BY
-    fecha;
+    Fecha;
 
+UPDATE "Marketing"."Publicitaria"
+SET
+    inversion_social = "Social"."Inversion"*"Social".""
+FROM
+    "Marketing"."Social"
+WHERE 
+    DATE("Publicitaria"."fecha") = DATE("Social"."Fecha");
