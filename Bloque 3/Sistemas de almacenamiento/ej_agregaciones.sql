@@ -74,7 +74,7 @@ GROUP BY
 
 -- EJERCICIO 4. PARA LA CAMPAÑA DE SOCIAL
 -- a) CALCULA EL CPM Y CPC DE CADA CAMPAÑA
--- b) ¿QUE DIA SE OBTUVO EL MAYOR CTR?
+
 -- CPM: Coste por mil impresiones = (Inversion / Impresiones) * 1000
 -- CPC: Coste por click = Inversion / Clicks
 -- CTR: Click Through Rate = Clicks / Impresiones
@@ -86,3 +86,16 @@ FROM
 	"Marketing"."Social"
 GROUP BY
 	"Social"."Campaña";
+
+-- b) ¿QUE DIA SE OBTUVO EL MAYOR CTR?
+SELECT
+	"Social"."Fecha" AS DIA,
+	SUM("Social"."Clics") AS TOT_CLICS,
+	SUM("Social"."Impresiones") AS TOT_IMPRESIONES,
+	ROUND(CAST(SUM("Social"."Clics") AS NUMERIC) / SUM("Social"."Impresiones"), 4)  AS CTR
+FROM
+	"Marketing"."Social"
+GROUP BY
+	DIA 
+ORDER BY
+	CTR DESC
