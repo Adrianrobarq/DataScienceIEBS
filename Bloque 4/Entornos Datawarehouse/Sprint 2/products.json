@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "Camiseta",
+        "category": "Camisetas",
+        "price": 10.99
+    },
+    {
+        "id": 2,
+        "name": "Vestido",
+        "category": "Vestidos",
+        "price": 29.99
+    },
+    {
+        "id": 3,
+        "name": "Pantalon",
+        "category": "Pantalones",
+        "price": 20.5
+    },
+    {
+        "id": 4,
+        "name": "Chaqueta",
+        "category": "Chaquetas",
+        "price": 79.99
+    },
+    {
+        "id": 5,
+        "name": "Jersey",
+        "category": "Jerseys",
+        "price": 35
+    }
+]
