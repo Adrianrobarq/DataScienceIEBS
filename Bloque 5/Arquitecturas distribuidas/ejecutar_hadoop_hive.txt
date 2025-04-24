@@ -1,0 +1,83 @@
+cd /home/bigdata/hadoop-3.3.6/
+sbin/start-dfs.sh
+
+cd /home/bigdata/apache-hive-3.1.3-bin/
+bin/beeline -u jdbc:hive2://
+
+CASO DE USO: ¿Uber? ¿Just Eat? *Quiero un caso con dos tipos de usuario
+UBER
+
+# Datos generados con Deepseek distill
+
+Este CSV incluye los siguientes campos relevantes para una aplicación de Uber:
+
+RideID: Identificador único de cada viaje.
+DriverID: Identificador del driver que realizó el viaje.
+PassengerID: Identificador del pasajero que ocupó el viaje.
+PickupLocation y DropoffLocation: Ubicación de inicio y fin del viaje.
+pickupTime y dropoffTime: Horario de inicio y fin del viaje.
+FareAmount: Monto total del viaje.
+PaymentMethod: Método de pago utilizado.
+TripPurpose: Motivo por el cual se realizaron los viajes.
+Puedes personalizar estos ejemplos según tus necesidades específicas para la aplicación de Uber.
+
+-- Eliminar tabla si existe con el mismo nombre
+DROP TABLE IF EXISTS uber_rides;
+
+-- Crear la tabla
+CREATE TABLE uber_rides (
+    RideID STRING,
+    DriverID STRING,
+    PassengerID STRING,
+    PickupLocation STRING,
+    DropoffLocation STRING,
+    pickupTime TIMESTAMP,
+    dropoffTime TIMESTAMP,
+    FareAmount DECIMAL(6,2),
+    PaymentMethod STRING,
+    TripPurpose STRING
+);
+
+-- Importante comprobar la ruta desde la máquina virtual
+-- Cargar los datos desde el archivo de texto
+COPY uber_rides FROM '/media/sf_Master_Ciencia_de_Datos/Proyectos/DataScienceIEBS/Bloque 5/Arquitecturas distribuidas/datos_fic_uber.txt' 
+WITH (header = true, 
+      sep = ';',
+      quoted_delim = '',
+      nulls = 'NULL()');
+
+-- Verificar que se haya cargado correctamente
+SHOW TABLES;
+
+-- Cargar los datos manuales
+
+INSERT INTO TABLE uber_rides VALUES
+('123456','D1234','P1234','New York, NY','Los Angeles, CA','2023-10-01T14:30:00','2023-10-01T16:20:00',35.75,'credit_card','short_commute'),
+('123457','D1235','P1235','Los Angeles, CA','San Francisco, CA','2023-10-01T14:45:00','2023-10-01T16:15:00',42.50,'contactless payment','work commute'),
+('123458','D1236','P1236','Chicago, IL','Miami, FL','2023-10-01T15:00:00','2023-10-01T17:30:00',58.99,'debit card','vacation'),
+('123459','D1237','P1237','New York, NY','Washington, DC','2023-10-01T15:15:00','2023-10-01T16:45:00',48.75,'Cash','entertainment'),
+('123460','D1238','P1238','Los Angeles, CA','San Diego, CA','2023-10-01T14:00:00','2023-10-01T15:30:00',27.99,'credit_card','short_commute'),
+('123461','D1239','P1239','Chicago, IL','Minneapolis, MN','2023-10-01T14:15:00','2023-10-01T16:00:00',42.75,'contactless payment','work commute'),
+('123462','D1240','P1240','Minneapolis, MN','St. Paul, MN','2023-10-01T15:30:00','2023-10-01T17:00:00',38.99,'debit card','shopping'),
+('123463','D1241','P1241','Dallas, TX','Houston, TX','2023-10-01T15:45:00','2023-10-01T17:15:00',49.87,'Cash','entertainment'),
+('123464','D1242','P1242','San Francisco, CA','San Jose, CA','2023-10-01T14:00:00','2023-10-01T15:00:00',28.99,'credit_card','short_commute'),
+('123465','D1243','P1243','Austin, TX','Dallas, TX','2023-10-01T14:15:00','2023-10-01T16:45:00',39.75,'contactless payment','work commute');
+
+
+-- Ordenamos por duración de viaje
+SELECT
+    RideID,
+    DriverID,
+    PassengerID,
+    PickupLocation,
+    DropoffLocation,
+    pickupTime,
+    dropoffTime,
+    FareAmount,
+    PaymentMethod,
+    TripPurpose,
+    (unix_timestamp(dropoffTime) - unix_timestamp(pickupTime)) / 60 AS DurationMinutes
+FROM
+    uber_rides
+ORDER BY
+    DurationMinutes DESC;
