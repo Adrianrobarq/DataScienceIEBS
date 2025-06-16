@@ -1,0 +1,39 @@
+SOLUCIÓN 1
+----------
+
+(HDFS)
+
+cd /home/bigdata/hadoop-3.3.6/
+sbin/start-dfs.sh
+- Crear la carpeta /data en HDFS ejecutando el comando correspondiente:
+bin/hdfs dfs -mkdir -p /data/
+- Mover el fichero parquet contenido en la carpeta /home/bigdata/Descargas/aeropuertos/ del sistema de ficheros en local de Ubuntu a la carpeta creada anteriormente en el sistema de ficheros distribuído de HDFS:
+bin/hdfs dfs -copyFromLocal /home/bigdata/Descargas/aeropuertos/ /data/
+- Listar el contenido de la carpeta /data/aeropuertos/ en HDFS ejecutando el comando correspondiente:
+bin/hdfs dfs -ls /data/aeropuertos/
+
+
+(HIVE)
+
+cd /home/bigdata/apache-hive-3.1.3-bin/
+bin/beeline -u jdbc:hive2://
+- Crear una tabla en Hive llamada aeropuertos que apunte a la carpeta creada anteriormente en HDFS y que contiene el fichero parquet:
+0: jdbc:hive2://> CREATE EXTERNAL TABLE aeropuertos (airportID int, name string, city string, country string, iata string, icao string, latitude double, longitude double, altitude int, timezone double, dst string, tz string, type string, source string) STORED AS parquet LOCATION '/data/aeropuertos/';
+0: jdbc:hive2://> SHOW TABLES;
+0: jdbc:hive2://> DESCRIBE EXTENDED aeropuertos;
+- ¿Qué aeropuerto está a mayor altitud (columna altitude)?:
+0: jdbc:hive2://> SELECT name, altitude FROM aeropuertos WHERE altitude = (SELECT MAX(altitude) FROM aeropuertos);
+- ¿Cuántos aeropuertos hay en España (Spain)?:
+0: jdbc:hive2://> SELECT COUNT(*) AS number_of_airports, country FROM aeropuertos WHERE country='Spain' GROUP BY country;
+- ¿Qué países tienen aeropuertos cuyo horario de verano (columna dst) sea el de Europa (E)?
+0: jdbc:hive2://> SELECT distinct(country) FROM aeropuertos WHERE dst='E';
+0: jdbc:hive2://> !q
+
+
+PARAR HDFS
+
+cd /home/bigdata/hadoop-3.3.6/
+sbin/stop-dfs.sh 
+
+SALIR DE LA MÁQUINA VIRTUAL
+

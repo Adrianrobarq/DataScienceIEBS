@@ -1,0 +1,37 @@
+Schema Shops
+{
+	"type":"record",
+	"name":"shops",
+	"fields":[
+		{"name":"id", "type":["null", "int"]},
+		{"name":"name", "type":["null", "string"]},
+		{"name":"city", "type":["null", "string"]},
+		{"name":"budget", "type":["null", "double"]}
+	]
+} 
+
+Hadoop configuration resources
+/home/bigdata/hadoop-3.3.6/etc/core-site.xml, /home/bigdata/hadoop-3.3.6/etc/hadoop/hdfs-site.xml
+
+Directory
+/test/shops
+
+Schema rutas columnas: airline,airlineID,sourceAirport,sourceID,destinationAirport,destinationID,codeshare,stops,equipment
+{
+	"type":"record",
+	"name":"routes",
+	"fields":[
+		{"name": "airline", "type":["null", "string"]},
+		{"name": "airlineID", "type":["null", "int"]},
+		{"name": "sourceAirport", "type":["null", "string"]},
+		{"name": "sourceID", "type":["null", "int"]},
+		{"name": "destinationAirport", "type":["null", "string"]},
+		{"name": "destinationID", "type":["null", "int"]},
+		{"name": "codeshare", "type":["null", "string"]},
+		{"name": "stops", "type":["null", "int"]},
+		{"name": "equipment", "type":["null", "string"]}
+	]
+}
+
+Crear tabla externa
+CREATE EXTERNAL TABLE rutas(airline string, airlineID int, sourceAirport string, sourceID int, destinationAirport string, destinationID int, codeshare string, stops int, equipment string) STORED AS parquet LOCATION '/nifi/routes/';
