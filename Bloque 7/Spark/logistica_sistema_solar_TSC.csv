@@ -1,0 +1,101 @@
+ID_Envio,Origen,Destino,Tipo_Carga,Masa_kg,Tiempo_Entrega_días,Costo_Estimado_Euros,Estado,Estado_Envio,Manifiesto,Consumo_Combustible_L,Coordenadas_Origen,Coordenadas_Destino,Fecha_Envio,ID_Nave
+001,Estación Orbital Saturno,Europa,Equipo Científico,808,17,49782.8,Alta,Demorado,MF-6C698688,1079.16,"-95.2638,-49.4028","-126.4673,30.8775",2125-01-04,TSC-001
+002,Estación Ceres,Marte,Alimentos Procesados,1154,380,13639.95,Media,Programado,MF-474C9A62,621.69,"157.1547,32.0798","-102.8424,50.4302",2125-04-30,TSC-010
+003,Marte,Estación Ceres,Muestras Geológicas,1486,117,15555.85,Baja,En tránsito,MF-A3A550D0,1911.85,"48.4958,-75.9482","119.3142,-19.5305",2125-09-20,TSC-002
+004,Europa,Estación Orbital Júpiter,Suministros Generales,538,271,42979.4,Baja,En tránsito,MF-5515E7DE,424.41,"-39.9533,-40.3437","140.6856,56.5205",2125-04-22,TSC-008
+005,Luna,Estación Orbital Saturno,Agua,593,50,23135.3,Media,En tránsito,MF-C1262954,332.08,"-94.7098,-86.4081","113.8076,5.0770",2125-09-01,TSC-010
+006,Luna,Titán,Repuestos Mecánicos,1837,318,20153.5,Media,Programado,MF-2DB0D76E,1652.64,"141.9937,45.1677","-176.8450,-78.3383",2125-12-23,TSC-010
+007,Ceres,Estación Orbital Saturno,Muestras Geológicas,98,217,50150.0,Baja,Demorado,MF-858A79C9,101.8,"121.5415,-26.5204","-137.3107,-54.3537",2125-01-12,TSC-010
+008,Titán,Estación Orbital Saturno,Componentes Electrónicos,392,33,21146.3,Media,Entregado,MF-1FD7F914,235.91,"-112.8941,51.5841","-110.6568,-83.3575",2125-09-17,TSC-005
+009,Ceres,Europa,Componentes Electrónicos,1884,378,44186.4,Alta,Entregado,MF-D2927B1C,1143.15,"119.3162,43.1569","128.1742,-31.6293",2125-03-20,TSC-007
+010,Marte,Europa,Suministros Médicos,1699,323,15483.6,Baja,En tránsito,MF-5583CF95,1710.64,"62.0205,-42.5081","68.4305,-86.9672",2125-12-27,TSC-008
+011,Tierra,Luna,Muestras Geológicas,823,348,47668.0,Media,En tránsito,MF-5B513736,978.36,"133.3148,-79.4056","-49.5388,-43.2096",2125-06-21,TSC-007
+012,Titán,Marte,Suministros Médicos,1199,227,5087.25,Media,Demorado,MF-86387D56,1492.74,"163.3216,-38.8357","116.5289,-21.6255",2125-08-09,TSC-005
+013,Titán,Estación Ceres,Recursos Minerales,1808,227,24429.85,Media,Demorado,MF-F11801DA,1608.25,"38.5139,43.1476","129.8248,39.5785",2125-02-08,TSC-003
+014,Estación Ceres,Estación Orbital Júpiter,Suministros Médicos,1604,162,8976.85,Alta,En tránsito,MF-D13A7EDA,929.83,"-68.9950,15.8496","67.7543,-58.6471",2125-05-14,TSC-003
+015,Estación Ceres,Tierra,Agua,1565,171,22045.6,Media,Entregado,MF-4FDFB9A9,1891.03,"70.3118,81.7870","125.3640,57.5720",2125-04-02,TSC-008
+016,Estación Ceres,Estación Orbital Saturno,Suministros Generales,726,220,44893.6,Media,Demorado,MF-7FE48138,863.09,"86.8540,-72.8471","-140.6889,20.5283",2125-10-04,TSC-001
+017,Estación Orbital Júpiter,Tierra,Datos de Investigación,1468,174,8037.6,Alta,Entregado,MF-63FB147D,1086.18,"-41.5243,14.7697","-41.5770,-51.9625",2125-11-22,TSC-006
+018,Estación Orbital Saturno,Marte,Suministros Médicos,705,285,28091.65,Alta,Programado,MF-E5DF5FC9,825.25,"137.2828,55.3848","-21.0941,81.1213",2125-02-09,TSC-006
+019,Estación Orbital Saturno,Luna,Recursos Minerales,1230,368,45536.2,Media,Entregado,MF-9ED1FE98,854.13,"-130.5493,31.7147","-23.5908,-72.8823",2125-11-15,TSC-001
+020,Titán,Estación Orbital Júpiter,Equipo Científico,1789,101,27483.9,Alta,En tránsito,MF-7D548B57,2109.21,"4.6200,-80.5457","-128.8105,-35.6266",2125-05-05,TSC-001
+021,Tierra,Titán,Suministros Generales,143,285,12711.75,Media,Programado,MF-A237E808,145.03,"-159.3485,-47.9729","-125.4437,44.5806",2125-12-25,TSC-005
+022,Estación Orbital Júpiter,Titán,Suministros Médicos,244,5,15490.4,Alta,Programado,MF-9A1A2B92,200.27,"-113.9005,-69.0961","-109.1328,47.4587",2125-09-22,TSC-004
+023,Luna,Estación Ceres,Equipo Científico,1679,283,14656.55,Baja,Demorado,MF-A8739878,2320.99,"34.1506,-66.7518","79.9473,49.0805",2125-12-08,TSC-005
+024,Estación Ceres,Estación Orbital Júpiter,Componentes Electrónicos,1243,165,9799.65,Alta,Entregado,MF-D13FE15E,1501.44,"38.4658,-3.4336","34.7275,-49.4873",2125-08-11,TSC-003
+025,Marte,Europa,Muestras Geológicas,495,265,34568.65,Baja,Demorado,MF-44937FB6,651.8,"-172.4255,-40.0443","113.2759,29.8675",2125-05-07,TSC-004
+026,Estación Orbital Júpiter,Ceres,Recursos Minerales,254,117,26976.45,Baja,Programado,MF-12564CC2,342.92,"-42.2957,63.6884","-152.6163,13.8506",2125-10-23,TSC-006
+027,Estación Ceres,Luna,Alimentos Procesados,385,279,34938.4,Alta,Programado,MF-961949B0,408.3,"130.0110,-32.9215","-53.0014,-49.4684",2125-12-13,TSC-001
+028,Estación Ceres,Europa,Agua,1674,310,34827.05,Media,Entregado,MF-C12B897C,1285.72,"-47.0716,60.7358","31.4420,18.1180",2125-09-26,TSC-002
+029,Luna,Estación Ceres,Recursos Minerales,1188,96,39968.7,Baja,Programado,MF-919FEC2A,608.05,"-126.7873,16.0583","-110.2978,80.2972",2125-04-07,TSC-004
+030,Titán,Estación Ceres,Equipo Científico,484,395,40056.25,Baja,Entregado,MF-B8EB0A1D,510.67,"-55.7675,-64.8898","-30.6302,-74.5988",2125-11-09,TSC-006
+031,Luna,Ceres,Agua,1453,269,19857.7,Baja,Programado,MF-5638C621,2067.1,"122.4794,-24.4638","-105.7890,18.0025",2125-05-22,TSC-009
+032,Marte,Titán,Componentes Electrónicos,1512,134,38447.2,Alta,En tránsito,MF-8FACFAFF,848.02,"134.7830,-68.3475","128.2268,52.9618",2125-08-14,TSC-004
+033,Marte,Tierra,Repuestos Mecánicos,1187,253,37660.95,Alta,Demorado,MF-646BA63C,1448.54,"146.9123,-8.4134","-142.7118,27.0029",2125-10-28,TSC-003
+034,Europa,Estación Orbital Júpiter,Suministros Médicos,1459,41,35440.75,Baja,En tránsito,MF-FA70A2EF,1761.58,"176.7322,56.6832","164.8911,33.9338",2125-10-08,TSC-005
+035,Estación Ceres,Estación Orbital Júpiter,Agua,1437,90,26710.4,Media,Entregado,MF-1864233A,881.44,"154.0913,-44.9259","-99.9373,22.0990",2125-06-26,TSC-004
+036,Europa,Luna,Suministros Generales,578,189,10260.35,Media,Programado,MF-0885093E,626.62,"-42.4416,76.1630","-40.0409,-6.1345",2125-12-21,TSC-009
+037,Estación Orbital Júpiter,Marte,Repuestos Mecánicos,221,205,33962.6,Media,Entregado,MF-F04AB045,134.68,"94.4351,70.9623","45.7656,-67.1920",2125-04-29,TSC-007
+038,Europa,Titán,Equipo Científico,187,164,42209.3,Media,Demorado,MF-4D1194D6,106.42,"80.9307,-47.8642","83.9604,-22.5722",2125-03-28,TSC-006
+039,Estación Ceres,Marte,Suministros Médicos,1952,181,30256.6,Media,Programado,MF-A3253322,2026.76,"140.0266,80.1984","-129.3704,-55.9954",2125-01-10,TSC-003
+040,Marte,Estación Orbital Saturno,Alimentos Procesados,1930,391,15079.85,Alta,Demorado,MF-C7CC45F5,1895.63,"-82.9695,59.0021","-150.3728,64.9936",2125-06-08,TSC-007
+041,Luna,Europa,Suministros Generales,208,221,30741.1,Baja,En tránsito,MF-C430DCB8,232.18,"19.9290,-11.8388","-59.8537,-75.0254",2125-12-30,TSC-001
+042,Estación Orbital Júpiter,Estación Ceres,Equipo Científico,1389,269,27258.65,Media,Demorado,MF-2772029F,1441.99,"120.6088,87.1059","-171.3841,65.3596",2125-01-23,TSC-005
+043,Estación Orbital Saturno,Ceres,Equipo Científico,747,46,27417.6,Media,En tránsito,MF-B64567BB,516.28,"124.0973,-63.0022","112.4554,58.4953",2125-08-30,TSC-004
+044,Europa,Estación Orbital Júpiter,Componentes Electrónicos,1590,351,32417.3,Baja,Programado,MF-D3A07F4A,1358.84,"-4.2864,-5.8687","-21.9857,72.6138",2125-02-25,TSC-006
+045,Tierra,Ceres,Componentes Electrónicos,845,379,40743.05,Baja,Programado,MF-23B74AD5,450.21,"123.6335,76.1649","-17.5089,61.3464",2125-03-12,TSC-003
+046,Estación Orbital Saturno,Titán,Equipo Científico,371,332,47677.35,Media,En tránsito,MF-0B8BC9BF,530.6,"88.6974,8.3326","34.8121,80.4053",2125-02-28,TSC-010
+047,Europa,Ceres,Agua,469,74,18923.55,Baja,En tránsito,MF-E9C0A8AE,267.97,"74.4050,81.2310","77.8285,17.0114",2125-03-30,TSC-005
+048,Estación Orbital Júpiter,Europa,Muestras Geológicas,1395,228,18989.0,Alta,Entregado,MF-1F3790A7,980.0,"-148.7483,0.6671","-50.6763,37.3915",2125-09-16,TSC-002
+049,Estación Orbital Saturno,Estación Orbital Júpiter,Datos de Investigación,1589,295,10700.65,Alta,Entregado,MF-C3A75C48,2155.14,"113.6535,24.8137","61.1958,-13.6984",2125-04-08,TSC-002
+050,Estación Ceres,Europa,Componentes Electrónicos,102,37,28170.7,Baja,Demorado,MF-9228CFF1,75.56,"-67.5539,42.7027","82.4170,49.9015",2125-04-27,TSC-003
+051,Marte,Ceres,Repuestos Mecánicos,424,88,11178.35,Baja,Demorado,MF-01150FF9,557.44,"-31.9017,-23.7948","81.4694,-56.8542",2125-10-21,TSC-004
+052,Ceres,Europa,Agua,1330,217,15970.65,Media,Entregado,MF-D8E6EC39,938.45,"42.0092,14.6492","-134.8258,-45.1819",2125-10-11,TSC-004
+053,Estación Orbital Saturno,Estación Ceres,Datos de Investigación,911,140,50954.1,Media,Demorado,MF-0BF1A6E9,1303.61,"14.0991,36.7366","143.8545,-74.4337",2125-06-03,TSC-005
+054,Luna,Estación Orbital Júpiter,Equipo Científico,615,328,18604.8,Media,Demorado,MF-399C01E1,377.15,"-73.5983,85.9029","130.8019,-49.3029",2125-12-19,TSC-006
+055,Luna,Europa,Repuestos Mecánicos,1601,243,21019.65,Baja,Entregado,MF-F4654F63,1920.09,"37.4678,28.5710","13.5223,-55.0190",2125-12-26,TSC-010
+056,Estación Orbital Saturno,Titán,Suministros Generales,1045,329,27345.35,Baja,Entregado,MF-A3B1AFF6,601.51,"-32.8927,68.8566","-53.3647,-13.4766",2125-04-08,TSC-001
+057,Ceres,Estación Ceres,Muestras Geológicas,1266,113,45077.2,Media,Programado,MF-218C101F,985.18,"54.1067,52.8596","174.2897,14.7186",2125-09-30,TSC-010
+058,Luna,Titán,Datos de Investigación,1061,283,20285.25,Alta,En tránsito,MF-E874270C,989.82,"86.9348,38.7262","-54.1479,0.8320",2125-02-26,TSC-007
+059,Estación Ceres,Marte,Datos de Investigación,718,129,42107.3,Baja,En tránsito,MF-AEFAC80A,717.18,"55.6866,62.8017","117.0792,42.0474",2125-01-26,TSC-006
+060,Europa,Marte,Repuestos Mecánicos,1081,179,10467.75,Baja,En tránsito,MF-67060C2C,1410.64,"57.4025,43.9543","147.7689,-43.2232",2125-09-13,TSC-001
+061,Ceres,Estación Orbital Saturno,Suministros Generales,732,330,28809.05,Media,Programado,MF-44498CB2,817.42,"155.5479,13.2207","41.6703,-79.5812",2125-01-15,TSC-006
+062,Titán,Marte,Datos de Investigación,94,226,34515.95,Alta,Entregado,MF-3C2C78D0,80.92,"-80.9671,-54.5623","1.2751,-60.3134",2125-03-12,TSC-008
+063,Estación Orbital Saturno,Estación Ceres,Datos de Investigación,276,369,27469.45,Alta,En tránsito,MF-73732D1B,308.34,"47.8871,-36.3680","-143.2780,-8.4440",2125-11-16,TSC-007
+064,Estación Orbital Júpiter,Luna,Equipo Científico,1301,44,19468.4,Alta,Entregado,MF-80C63DC0,1518.63,"-97.6448,71.7676","153.0737,-41.4320",2125-02-06,TSC-005
+065,Europa,Estación Orbital Saturno,Datos de Investigación,1797,341,47521.8,Baja,Entregado,MF-62485C17,1241.52,"-53.0983,26.9219","78.3499,77.2045",2125-09-29,TSC-006
+066,Marte,Estación Orbital Saturno,Suministros Generales,1772,360,42456.65,Alta,Entregado,MF-9569D557,1078.65,"115.5833,-39.9625","178.7795,-10.3406",2125-02-07,TSC-008
+067,Titán,Estación Orbital Júpiter,Muestras Geológicas,888,206,6005.25,Alta,Demorado,MF-D84E7C86,686.26,"-70.9425,-84.1242","-130.1118,-85.3306",2125-07-03,TSC-002
+068,Marte,Ceres,Muestras Geológicas,1189,199,18849.6,Baja,En tránsito,MF-A9F305F7,762.48,"-117.8167,63.0296","-132.9271,-34.1294",2125-09-08,TSC-006
+069,Estación Orbital Júpiter,Tierra,Componentes Electrónicos,549,355,12271.45,Alta,Demorado,MF-C0A6782A,646.91,"151.2744,45.5340","8.5210,60.6016",2125-02-13,TSC-001
+070,Europa,Titán,Repuestos Mecánicos,1884,60,23655.5,Media,Programado,MF-A532F951,1941.34,"162.7672,-51.1398","123.8145,-13.6735",2125-03-12,TSC-002
+071,Ceres,Marte,Equipo Científico,73,317,33413.5,Baja,En tránsito,MF-A442E220,81.46,"-137.5177,-0.1825","142.6425,-22.0161",2125-11-28,TSC-002
+072,Europa,Titán,Suministros Generales,901,87,13589.8,Media,Demorado,MF-20C5B9DF,738.89,"35.6135,-72.6029","10.2676,36.4721",2125-06-04,TSC-008
+073,Marte,Titán,Recursos Minerales,389,4,12818.0,Alta,Entregado,MF-FCB85146,246.39,"73.9632,-66.0795","47.1042,-10.7553",2125-05-12,TSC-008
+074,Marte,Ceres,Suministros Médicos,1950,46,26916.95,Alta,Entregado,MF-6E58C1A8,2792.22,"-161.9658,-65.1931","83.0424,69.0481",2125-04-28,TSC-009
+075,Tierra,Marte,Repuestos Mecánicos,123,192,42497.45,Alta,Demorado,MF-CDD02959,69.64,"-33.2027,35.2667","13.2126,-81.9226",2125-06-03,TSC-004
+076,Luna,Estación Orbital Saturno,Muestras Geológicas,1666,320,7325.3,Alta,Demorado,MF-31A85EA9,1139.76,"130.3428,86.6541","28.4352,79.4272",2125-01-18,TSC-001
+077,Estación Orbital Júpiter,Estación Orbital Saturno,Datos de Investigación,120,308,44789.9,Media,Programado,MF-D2C36B5E,111.36,"-98.2664,-21.5510","176.4945,-3.1484",2125-12-31,TSC-007
+078,Ceres,Marte,Agua,203,157,11206.4,Baja,En tránsito,MF-9A4AA9F5,137.13,"-93.0936,86.0918","-33.7970,-75.4233",2125-12-22,TSC-009
+079,Estación Ceres,Estación Orbital Saturno,Alimentos Procesados,1514,125,27265.45,Baja,En tránsito,MF-6C561A6F,1179.53,"-21.1455,21.3859","7.9200,-4.5146",2125-03-20,TSC-006
+080,Estación Orbital Júpiter,Marte,Suministros Médicos,148,104,48098.95,Baja,Entregado,MF-B6FC452B,168.45,"-88.0046,-89.6662","62.4775,-84.6621",2125-05-03,TSC-002
+081,Estación Ceres,Marte,Datos de Investigación,470,342,32475.95,Media,Programado,MF-9FB40645,704.81,"-55.5047,-24.1410","45.8565,-68.8980",2125-02-04,TSC-001
+082,Estación Ceres,Europa,Suministros Generales,1005,174,22824.2,Media,Entregado,MF-87A53A76,1333.63,"-144.5123,16.8792","21.9505,-13.1869",2125-05-03,TSC-002
+083,Estación Orbital Júpiter,Europa,Recursos Minerales,1089,65,30821.0,Baja,Demorado,MF-4240B561,954.65,"95.4024,36.5660","-178.0728,-61.8241",2125-01-16,TSC-006
+084,Luna,Estación Orbital Júpiter,Recursos Minerales,1756,128,35082.05,Alta,Entregado,MF-1F3CB5E4,1056.65,"-48.7605,30.1911","79.0421,34.9576",2125-12-24,TSC-004
+085,Estación Orbital Saturno,Luna,Equipo Científico,538,321,14608.95,Media,En tránsito,MF-4E664603,723.38,"99.5621,38.3348","55.7340,-40.5815",2125-08-29,TSC-009
+086,Estación Orbital Júpiter,Ceres,Suministros Médicos,168,93,29795.05,Alta,Entregado,MF-49113947,191.91,"119.9497,64.5608","24.0227,62.9252",2125-04-11,TSC-008
+087,Ceres,Estación Ceres,Componentes Electrónicos,252,349,18178.95,Baja,Programado,MF-624F21FF,371.77,"-75.1798,76.4280","-111.0824,51.1406",2125-05-28,TSC-008
+088,Tierra,Luna,Equipo Científico,1786,186,16519.75,Alta,Programado,MF-D95FECBB,1788.13,"-107.8745,81.5486","-101.5977,-65.5376",2125-01-13,TSC-003
+089,Europa,Titán,Muestras Geológicas,1367,370,17316.2,Alta,En tránsito,MF-20DEBCFF,1941.79,"32.5416,17.8907","78.5862,11.5664",2125-07-28,TSC-002
+090,Titán,Luna,Suministros Médicos,1465,239,12692.2,Alta,Demorado,MF-E557EE0A,2035.08,"145.6837,-81.7964","169.1425,-27.9312",2125-06-21,TSC-005
+091,Europa,Estación Ceres,Muestras Geológicas,1495,34,32217.55,Baja,Entregado,MF-BE11EEC1,2126.63,"-178.2676,-11.6766","-107.9340,-62.7233",2125-03-04,TSC-004
+092,Luna,Estación Ceres,Recursos Minerales,332,165,10068.25,Alta,Programado,MF-17B179DC,301.43,"-18.8013,58.3386","-130.8485,15.1793",2125-01-05,TSC-008
+093,Estación Ceres,Estación Orbital Júpiter,Suministros Médicos,618,189,28475.85,Baja,Demorado,MF-73454133,663.16,"-97.1976,87.9843","175.0303,-70.0692",2125-09-03,TSC-001
+094,Estación Ceres,Marte,Componentes Electrónicos,107,282,50146.6,Baja,Programado,MF-9B9F06E5,99.11,"4.5840,-37.0618","-139.7424,-23.4773",2125-04-22,TSC-007
+095,Estación Ceres,Luna,Datos de Investigación,1916,81,19597.6,Baja,Demorado,MF-437C0990,1867.74,"51.1837,-81.4360","50.2330,-58.1698",2125-10-09,TSC-003
+096,Ceres,Estación Orbital Júpiter,Equipo Científico,511,330,44477.95,Alta,Demorado,MF-C90670E8,585.72,"144.9967,-50.5655","51.7932,-32.4021",2125-10-25,TSC-008
+097,Europa,Estación Orbital Júpiter,Recursos Minerales,1095,338,8681.05,Media,Programado,MF-09E5669A,887.34,"135.6715,55.3155","-133.1798,-15.3092",2125-12-03,TSC-002
+098,Ceres,Estación Orbital Saturno,Suministros Generales,1133,94,14930.25,Media,Demorado,MF-0DE2B2A2,621.0,"-36.6254,29.6841","24.5114,6.2779",2125-06-21,TSC-010
+099,Tierra,Europa,Agua,1903,126,35745.9,Media,En tránsito,MF-39B02AFA,1062.29,"124.2434,-71.0943","-38.6381,56.7869",2125-11-20,TSC-008
+100,Marte,Titán,Recursos Minerales,1856,68,35626.9,Media,Demorado,MF-1543BC4B,2096.18,"36.8865,-28.7120","-167.9209,1.0990",2125-08-29,TSC-001
