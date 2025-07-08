@@ -1,7 +1,7 @@
 """
 Creador: Adrián Robles Arques
 
-Documento de prueba de la biblioteca Polar
+Documento de prueba de la biblioteca Polars
 """
 import polars as pl
 import datetime as dt
